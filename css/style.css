@@ -14,6 +14,10 @@
 * 	Template Style 
 *
 * ======================================================= */
+:root {
+  --main-color: #1a8ae6;
+}
+
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
@@ -51,7 +55,7 @@ body {
 }
 
 a {
-  color: #ff9000;
+  color: var(--main-color);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -59,7 +63,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ff9000;
+  color: var(--main-color);
   outline: none;
   text-decoration: none;
 }
@@ -83,17 +87,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #ff9000;
+  background: var(--main-color);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #ff9000;
+  background: var(--main-color);
 }
 
 ::selection {
   color: #fff;
-  background: #ff9000;
+  background: var(--main-color);
 }
 
 #fh5co-header,
@@ -112,7 +116,8 @@ figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 144, 0, 0.9);
+  background: var(--main-color);
+  opacity: 0.9;
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -231,7 +236,7 @@ figure {
 }
 
 #fh5co-features {
-  background: #ff9000;
+  background: var(--main-color);
 }
 #fh5co-features h2 {
   color: #fff;
@@ -266,7 +271,7 @@ figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #ff9000 !important;
+  color: var(--main-color) !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -317,7 +322,7 @@ figure {
 
 .fh5co-bg-dark {
   background: #2f3c4f;
-  background: #ff9000;
+  background: var(--main-color);
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -374,7 +379,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #ff9000;
+  color: var(--main-color);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -411,7 +416,7 @@ figure {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #ff9000;
+  background: var(--main-color);
 }
 
 .fh5co-heading {
@@ -453,6 +458,10 @@ figure {
   background-color: #e6e6e6;
   left: 50%;
   margin-left: 0px;
+}
+
+.timeline-heading {
+  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .timeline:before {
@@ -542,7 +551,7 @@ figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #ff9000;
+  background-color: var(--main-color);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -566,9 +575,9 @@ figure {
   height: 44px;
   font-size: 18px;
 }
-.timeline > li.timeline-unverted {
+/* .timeline > li.timeline-unverted {
   text-align: right;
-}
+} */
 @media screen and (max-width: 768px) {
   .timeline > li.timeline-unverted {
     text-align: left;
@@ -727,6 +736,11 @@ figure {
   display: table;
   overflow: hidden;
 }
+@media screen and (min-width: 992px) {
+  .work {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .work {
     height: 400px;
@@ -789,6 +803,11 @@ figure {
   transform: translate3d(0, 0, 0);
 }
 
+.btn-project {
+  margin-top: 5px;
+  width: 200px;
+}
+
 #fh5co-started {
   background-size: cover;
   background-position: center center;
@@ -811,7 +830,7 @@ figure {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #ff9000;
+  color: var(--main-color);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1128,9 +1147,9 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #ff9000;
+  background: var(--main-color);
   color: #fff;
-  border: 2px solid #ff9000;
+  border: 2px solid var(--main-color);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1140,13 +1159,13 @@ input[type="text"] {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #ff9000;
-  border: 2px solid #ff9000;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #ff9000;
+  background: var(--main-color);
   color: #fff;
 }
 
@@ -1295,7 +1314,7 @@ input[type="text"] {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #ff9000;
+  border-color: var(--main-color);
 }
 
 .row-pb-md {
